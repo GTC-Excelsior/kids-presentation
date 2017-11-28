@@ -1,2 +1,3 @@
-# spectacles
-Presentation demo using Spectacle
+# spectacle-boilerplate
+
+ReactJS Powered Presentation Framework
