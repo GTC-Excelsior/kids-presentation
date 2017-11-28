@@ -27,6 +27,10 @@ const theme = createTheme({
   primary: "#0F83BC",
   secondary: "black",
   tertiary: "white"
+}, {
+  primary: "Varela Round",
+  secondary: "Varela Round",
+  tertiary: "Varela Round"
 });
 
 const cursor = { show: false, blink: true, element: "|", hideWhenDone: false, hideWhenDoneDelay: 1000 };
@@ -36,7 +40,7 @@ export default class Presentation extends React.Component {
     return (
       <Deck transition={["fade", "slide"]} transitionDuration={750} theme={theme}>
         <Slide transition={["fade"]} bgColor="primary">
-          <Heading size={2} lineHeight={1} textColor="secondary">
+          <Heading size={1} fit lineHeight={1} textColor="secondary">
             > gift-the-code-2017
           </Heading>
           <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
