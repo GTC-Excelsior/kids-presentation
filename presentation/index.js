@@ -72,19 +72,39 @@ export default class Presentation extends React.Component {
           <Image src={images.team}/>
         </Slide>
 
+        <Slide transition={["fade"]} bgColor="tertiary">
+          <Heading size={1} lineHeight={1} textColor="secondary">
+            > challenge
+          </Heading>
+          <Text margin="10px 0 0" textColor="primary" size={1} fill bold>
+          Create a data-driven solution that will engage staff in performance-enhancing metrics.
+          </Text>
+        </Slide>
+
+
         <Slide transition={["fade"]} bgColor="primary">
           <Heading size={1} lineHeight={1} textColor="tertiary" fill bold>
           an interactive chatbot to grade & benchmark counsellor performance.
           </Heading>
         </Slide>
 
+        <Slide transition={[ "fade" ]} bgColor="tertiary" progressColor="primary">
+          <Heading size={ 4 } textColor="primary">Technology Stack</Heading>
+          <Terminal title="gtc-excelsior: ~" output={[
+            <Typist cursor={cursor}>
+              <div>Microsoft Botbuilder</div>
+              <div>Express.js</div>
+              <div>Chart.js</div>
+            </Typist>]}
+          />
+        </Slide>
+
         <Slide transition={["fade"]} bgColor="tertiary" textColor="secondary" progressColor="primary">
-          <Heading size={3} textColor="primary">Lessons Learned</Heading>
+          <Heading size={3} textColor="primary">Highlights</Heading>
           <List>
-            <ListItem>List Item 1</ListItem>
-            <ListItem>List Item 2</ListItem>
-            <ListItem>List Item 3</ListItem>
-            <ListItem>List Item 4</ListItem>
+            <ListItem>Collects better data than random sampling</ListItem>
+            <ListItem>Can be tailored based on KPIs</ListItem>
+            <ListItem>Compatibility with existing tools</ListItem>
           </List>
         </Slide>
 
