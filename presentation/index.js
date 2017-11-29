@@ -48,7 +48,7 @@ export default class Presentation extends React.Component {
           </Text>
         </Slide>
 
-        <Slide transition={[ "fade" ]} bgColor="tertiary">
+        <Slide transition={[ "fade" ]} bgColor="tertiary" progressColor="primary">
           <Heading size={ 4 } textColor="primary">Our Team</Heading>
           <Terminal title="gtc-excelsior: ~" output={[
             <Typist cursor={cursor}>
@@ -61,7 +61,7 @@ export default class Presentation extends React.Component {
           />
         </Slide>
 
-        <Slide transition={["fade"]} bgColor="tertiary" textColor="secondary">
+        <Slide transition={["fade"]} bgColor="tertiary" textColor="secondary" progressColor="primary">
           <Heading size={3} textColor="primary">Lessons Learned</Heading>
           <List>
             <ListItem>List Item 1</ListItem>
