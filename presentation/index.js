@@ -44,6 +44,7 @@ export default class Presentation extends React.Component {
   render() {
     return (
       <Deck transition={["fade", "slide"]} transitionDuration={750} theme={theme}>
+
         <Slide transition={["fade"]} bgColor="primary">
           <Heading size={1} fit lineHeight={1} textColor="secondary">
             > gift-the-code-2017
@@ -71,6 +72,12 @@ export default class Presentation extends React.Component {
           <Image src={images.team}/>
         </Slide>
 
+        <Slide transition={["fade"]} bgColor="primary">
+          <Heading size={1} lineHeight={1} textColor="tertiary" fill bold>
+          an interactive chatbot to grade & benchmark counsellor performance.
+          </Heading>
+        </Slide>
+
         <Slide transition={["fade"]} bgColor="tertiary" textColor="secondary" progressColor="primary">
           <Heading size={3} textColor="primary">Lessons Learned</Heading>
           <List>
@@ -88,8 +95,14 @@ export default class Presentation extends React.Component {
           </BlockQuote>
         </Slide>
 
+        <Slide transition={["fade"]} bgColor="primary">
+          <Heading size={1} fit lineHeight={1} textColor="tertiary" bold>
+          Q & A
+          </Heading>
+        </Slide>
+
         <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
-          <Heading size={3} textColor="tertiary">Thanks!</Heading>
+          <Heading size={3} textColor="tertiary">Thank you!</Heading>
           <Cite>Meagan & Ian</Cite>
         </Slide>
 
