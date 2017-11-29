@@ -8,6 +8,7 @@ import {
   Cite,
   Deck,
   Heading,
+  Image,
   ListItem,
   List,
   Quote,
@@ -22,6 +23,10 @@ import createTheme from "spectacle/lib/themes/default";
 
 // Require CSS
 require("normalize.css");
+
+const images = {
+  team: require('../assets/team.jpg'),
+};
 
 const theme = createTheme({
   primary: "#0F83BC",
@@ -59,6 +64,11 @@ export default class Presentation extends React.Component {
               <div>Saj Bandaranayake</div>
             </Typist>]}
           />
+        </Slide>
+
+        <Slide transition={[ "fade" ]} bgColor="tertiary">
+          <Heading size={ 4 } textColor="primary">Our Team</Heading>
+          <Image src={images.team}/>
         </Slide>
 
         <Slide transition={["fade"]} bgColor="tertiary" textColor="secondary" progressColor="primary">
