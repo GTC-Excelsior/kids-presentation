@@ -13,7 +13,8 @@ import {
   List,
   Quote,
   Slide,
-  Text
+  Text,
+  Notes
 } from "spectacle";
 
 import Terminal from "spectacle-terminal";
@@ -67,12 +68,12 @@ export default class Presentation extends React.Component {
           />
         </Slide>
 
-        <Slide transition={[ "fade" ]} bgColor="tertiary">
+        <Slide transition={[ "fade" ]} bgColor="tertiary" progressColor="rgb(38, 55, 114)">
           <Heading size={ 4 } textColor="primary">Our Team</Heading>
           <Image src={images.team}/>
         </Slide>
 
-        <Slide transition={["fade"]} bgColor="tertiary">
+        <Slide transition={["fade"]} bgColor="tertiary" progressColor="primary">
           <Heading size={1} lineHeight={1} textColor="secondary">
             > challenge
           </Heading>
@@ -88,6 +89,30 @@ export default class Presentation extends React.Component {
           </Heading>
         </Slide>
 
+        <Slide transition={["fade"]} bgColor="tertiary" textColor="secondary" progressColor="primary">
+          <Heading size={3} textColor="primary">Highlights</Heading>
+          <List>
+            <ListItem>Interactive!</ListItem>
+            <ListItem>Easy to add more scripts</ListItem>
+            <ListItem>Can be tailored based on KPI needs</ListItem>
+            <ListItem>Compatibility with existing tools</ListItem>
+          </List>
+          <Notes>
+            <h4>Slide notes</h4>
+            <ol>
+              <li>strengths-based approach</li>
+              <li>elicits the client’s preferred future</li>
+              <li>encourages the client to reflect on what they will take away from this session.</li>
+            </ol>
+          </Notes>
+        </Slide>
+
+        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
+          <Heading size={1} fit lineHeight={1} textColor="tertiary" bold>
+            demo time
+          </Heading>
+        </Slide>
+
         <Slide transition={[ "fade" ]} bgColor="tertiary" progressColor="primary">
           <Heading size={ 4 } textColor="primary">Technology Stack</Heading>
           <Terminal title="gtc-excelsior: ~" output={[
@@ -99,20 +124,16 @@ export default class Presentation extends React.Component {
           />
         </Slide>
 
-        <Slide transition={["fade"]} bgColor="tertiary" textColor="secondary" progressColor="primary">
-          <Heading size={3} textColor="primary">Highlights</Heading>
-          <List>
-            <ListItem>Collects better data than random sampling</ListItem>
-            <ListItem>Can be tailored based on KPIs</ListItem>
-            <ListItem>Compatibility with existing tools</ListItem>
-          </List>
-        </Slide>
-
-        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
-          <BlockQuote>
-            <Quote>Don't bet the farm</Quote>
-            <Cite>Someone wiser than me</Cite>
-          </BlockQuote>
+        <Slide transition={[ "fade" ]} bgColor="tertiary" progressColor="primary">
+          <Heading size={ 4 } textColor="primary">Next Steps</Heading>
+          <Terminal title="gtc-excelsior: ~" output={[
+            <Typist cursor={cursor}>
+              <div>Refine script(s)</div>
+              <div>Allow free-form responses instead of multiple choice</div>
+              <div>** Natural Language Processor</div>
+              <div>Analyze existing chatlogs for ideal answers?</div>
+            </Typist>]}
+          />
         </Slide>
 
         <Slide transition={["fade"]} bgColor="primary">
@@ -123,7 +144,7 @@ export default class Presentation extends React.Component {
 
         <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
           <Heading size={3} textColor="tertiary">Thank you!</Heading>
-          <Cite>Meagan & Ian</Cite>
+          <Cite>Meagan, Ian & Chris</Cite>
         </Slide>
 
       </Deck>
